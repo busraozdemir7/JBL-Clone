@@ -1,13 +1,13 @@
-@media (max-width: 689px) {
+@media (max-width: 768px) {
     .container {
         margin-inline: 1rem;
     }
     .home {
        &__img {
-        width: 180px;
+        width: 100px;
        } 
        &__title {
-        font-size: 8rem;
+        font-size: 4rem;
        }
     }
   .model__tooltip-1 .model__tooltip-text,
@@ -20,12 +20,12 @@
   .footer {
     &__form {
       button {
-        width: 130px;
+        width: 100%;
       }
     }
   } 
 }
-@media (min-width: 576px) {
+@media (min-width: 768px) {
   .about {
     &__container {
       grid-template-columns: 380px;
@@ -34,19 +34,19 @@
   }
   .footer {
     &__data {
-      grid-template-columns: repeat(3, max-content);
-      column-gap: 48px;
+      grid-template-columns: repeat(2,1fr);
+      column-gap: 20px;
     }
   }
 }
 @media (max-width: 768px) {
   .home {
     &__img {
-      width: 320px;
+      width: 100%;
     }
     &__title {
       font-size: 256px; 
-      top: -64px;
+      top: 0;
     }
     &__social {
       top: 0;
@@ -61,14 +61,15 @@
     justify-content: space-between;
   }
   .footer__data {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     column-gap: 20px;
   }
  
 } 
-@media (min-width 1150px) {
+@media (min-width: 1150px) {
   .container {
     margin-inline: auto;
+    max-width: 1200px;
   }
   .section {
     padding-block: 128px 32px;
@@ -80,8 +81,8 @@
     width: 500px;
   }
   .home__title {
-    font-size: 25rem;
-    top: -8px;
+    font-size: 4rem;
+    top: 0;
     column-gap: 16px;
   }
   .home__tooltip-img {
